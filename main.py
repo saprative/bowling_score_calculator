@@ -36,13 +36,13 @@ for frame in range(10):
             score += roll_1 + roll_2
             c = 0
             print_score(frame,score)
-        if frame == 10:
-            if c == 1:
-                r1 = int(input('\n Pin dropped in bonus first roll: '))
-                if r1 == 10:
-                    score += 10
-                    print("Total score {}".format(score))
-                else:
-                    r2 = int(input('\nPin dropped in bonus second roll: '))
-                    score += r1 + r2 
-                    print("Total score {}".format(score))
+    if frame == 9:
+        if c == 1:
+            r1 = int(input('\n Pin dropped in bonus first roll: '))
+            if r1 == 10:
+                score += 10
+                print("Total score {}".format(score))
+            else:
+                r2 = int(input('\nPin dropped in bonus second roll: '))
+                score += r1 + r2 
+                print("Total score {}".format(score))
