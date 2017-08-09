@@ -15,6 +15,8 @@ def print_score(frame,score):
     print("\n Score after {0} frame is {1}".format(frame+1,score))
 
 for frame in range(10):
+    roll_1 = 0
+    roll_2 = 0
     roll_1 = int(input('\n Pin dropped in first roll: '))
     if roll_1 == 10:
         score += 10
@@ -46,3 +48,11 @@ for frame in range(10):
                 r2 = int(input('\nPin dropped in bonus second roll: '))
                 score += r1 + r2 
                 print("Total score {}".format(score))
+        elif c == 2:
+            r1 = int(input('\n Pin dropped in bonus first roll: '))
+            score += r1
+            print("Total score {}".format(score))
+        else:
+            print("Total score {}".format(score))
+
+
